@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#output{
+    max-width:1200px;
+    margin:40px auto 0 auto;
+    
+}
+#output div{
+padding: 20px;
+box-sizing: border-box;
+margin-bottom: 20px;
+flex-basis: 30%;
+}
+#output div:last-child{
+    margin-right: 0;
+}
+#output div:nth-child(odd){
+    background: #1111;
+}
+#output div:nth-child(even){
+    background: rgba(149, 63, 63, 0.87);
+}
+@media (min-width:600px){
+    #output{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+button{
+    width: 100%;
+    margin:10px auto 0 auto;
+    height:30px;
+    background:white;
+    border:2px solid black;
+    cursor: pointer;
+    letter-spacing: 1px;
+    word-spacing:2px;
+    font-weight: bold;
+}
+h4{
+    font-size:1.2rem;
+    letter-spacing: 1px;
+    word-spacing:2px;
+    font-weight: bold;
+    font-style: italic;
+}
+p{
+    word-spacing: 2px;
+}
+
+h1{
+    text-align:center;
+     line-height: 1.3rem;
+      margin-top:40px;
+      margin-bottom:40px;
+}
+
+.cont{
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#title,#details,input[type='submit']{
+    margin-bottom:30px;
+}
+input[type='submit']{
+    width: 85%;
+    background: white;
+    border:2px solid rgb(99, 144, 182);
+    height:30px;
+    cursor: pointer;
+}
+.hrf{
+    background: black;
+}
